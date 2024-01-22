@@ -18,7 +18,7 @@ struct SideMenuRowView: View {
     var body: some View {
         HStack{
             Image(systemName: option.systemImageName)
-                .imageScale(.small)
+                .imageScale(.large)
             
             Text(option.title)
                 .font(.subheadline)
@@ -26,13 +26,13 @@ struct SideMenuRowView: View {
             Spacer()
         }
         .padding(.leading)
-        .foregroundStyle(isSelectedOption ? .blue : .primary)
-        .frame(width:216, height: 44)
-        .background(isSelectedOption ? .blue.opacity(0.25) : .clear)
+        .foregroundStyle(isSelectedOption ? .primary : .primary)
+        .frame(width: 216, height: 44)
+        .background(isSelectedOption ? .menuSelection : .clear)
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
 #Preview {
-    SideMenuRowView(option: .dashborad, selectedOption: .constant(.dashborad))
+    SideMenuRowView(option: .home, selectedOption: .constant(.home))
 }

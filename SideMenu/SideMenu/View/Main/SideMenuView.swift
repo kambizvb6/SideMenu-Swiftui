@@ -9,8 +9,7 @@ import SwiftUI
 
 struct SideMenuView: View {
     @Binding var isShowing: Bool
-    @Binding var selectedTab: Int
-    @State private var selectedOtion: SideMenuOptionModel?
+    @Binding var selectedOption: SideMenuOptionModel?
     
     var body: some View {
         ZStack{
@@ -21,25 +20,25 @@ struct SideMenuView: View {
                     .onTapGesture { isShowing.toggle() }
                 
                 HStack{
-                    VStack(alignment: .leading, spacing: 32){
+                    VStack(alignment: .leading, spacing: 12){
                         SideMenuHeaderView()
                         
                         VStack{
-                            ForEach(SideMenuOptionModel.allCases) { option in
-                                Button {
-                                    onOtionTapped(option)
-                                } label: {
-                                    SideMenuRowView(option: option, selectedOption: $selectedOtion)
-                                }
-
+                            ForEach(SideMenuSections.allCases) { secation in
+                                SideMenuSectionView(section: secation,
+                                                    isShowing: $isShowing,
+                                                    selectedOption: $selectedOption)
                             }
                         }
                         
                         Spacer()
+                        
+                        SideMenuFooterView()
+                            .padding(.horizontal, -16)
                     }
                     .padding()
                     .frame(width: 270, alignment: .leading)
-                    .background(.white)
+                    .background(.menuBackground)
                     
                     Spacer()
                 }
@@ -50,12 +49,11 @@ struct SideMenuView: View {
     }
     
     private func onOtionTapped(_ option: SideMenuOptionModel) {
-        selectedOtion = option
-        selectedTab = option.rawValue
+        selectedOption = option
         isShowing = false
     }
 }
 
 #Preview {
-    SideMenuView(isShowing: .constant(true), selectedTab: .constant(0))
+    SideMenuView(isShowing: .constant(true), selectedOption: .constant(.home))
 }

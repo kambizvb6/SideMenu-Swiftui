@@ -9,7 +9,16 @@ import SwiftUI
 
 struct DashboradView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack{
+                VStack{
+                    Text("Home")
+                        .font(.largeTitle)
+                }
+            }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

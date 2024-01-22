@@ -9,7 +9,37 @@ import SwiftUI
 
 struct SideMenuFooterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Divider()
+        
+        HStack {
+            Image(systemName: "person.circle.fill")
+                .imageScale(.large)
+                .foregroundStyle(.white)
+                .frame(width: 48, height: 48)
+                .background(.blue)
+                .clipShape(Circle())
+                .padding(.vertical)
+            
+            VStack(alignment: .leading, spacing: 6.0){
+                Text("Kambiz Dehghani")
+                    .font(.headline)
+                
+                Text("Kambizvb6@gmail.com")
+                    .font(.footnote)
+                    .tint(.gray)
+            }
+            
+            Spacer()
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "ellipsis")
+            }
+            
+        }
+        .padding(.horizontal)
     }
 }
 

@@ -8,43 +8,38 @@
 import Foundation
 
 enum SideMenuOptionModel: Int, CaseIterable {
-    case dashborad
-    case performance
-    case profile
-    case search
-    case notifications
+    case home
+    case visitors
+    case summary
+    case searchEngin
     
     var title: String{
         switch self {
-        case .dashborad:
-            return "Dashborad"
-        case .performance:
-            return "Performance"
-        case .profile:
-            return "Profile"
-        case .search:
-            return "Search"
-        case .notifications:
-            return "Notifications"
+        case .home:
+            return "Home"
+        case .visitors:
+            return "Visitors"
+        case .summary:
+            return "Summary"
+        case .searchEngin:
+            return "Search Engin"
         }
     }
     
     var systemImageName: String {
         switch self {
-        case .dashborad:
-            return "filemenu.and.cursorarrow"
-        case .performance:
-            return "chart.bar"
-        case .profile:
+        case .home:
+            return "house"
+        case .visitors:
             return "person"
-        case .search:
-            return "magnifyingglass"
-        case .notifications:
-            return "bell"
+        case .summary:
+            return "chart.pie"
+        case .searchEngin:
+            return "magnifyingglass.circle"
         }
     }
 }
 
-extension SideMenuOptionModel: Identifiable {
+extension SideMenuOptionModel: Identifiable, Hashable{
     var id: Int { return self.rawValue }
 }

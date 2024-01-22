@@ -10,22 +10,13 @@ import SwiftUI
 struct SideMenuHeaderView: View {
     var body: some View {
         HStack{
-            Image(systemName: "person.circle.fill")
-                .imageScale(.large)
+            Image("Logo")
+                .resizable()
+                .scaledToFit()
                 .foregroundStyle(.white)
-                .frame(width: 48, height: 48)
-                .background(.blue)
+                .frame(width: 200)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(.vertical)
-            
-            VStack(alignment: .leading, spacing: 6.0){
-                Text("Kambiz Dehghani")
-                    .font(.headline)
-                
-                Text("Kambizvb6@gmail.com")
-                    .font(.footnote)
-                    .tint(.gray)
-            }
         }
     }
 }
