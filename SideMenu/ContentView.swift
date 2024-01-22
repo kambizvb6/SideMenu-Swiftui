@@ -47,7 +47,6 @@ struct ContentView: View {
                         showMenu.toggle()
                     } label: {
                         Image(systemName: "line.3.horizontal")
-                            .tint(.black)
                     }
 
                 }
