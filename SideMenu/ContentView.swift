@@ -19,7 +19,7 @@ struct ContentView: View {
                     ForEach(SideMenuOptionModel.allCases) { option in
                         switch option {
                         case .home:
-                            DashboradView()
+                            Text("Home")
                                 .tag(option.rawValue)
                         case .visitors:
                             Text("Visitors")
@@ -47,6 +47,7 @@ struct ContentView: View {
                         showMenu.toggle()
                     } label: {
                         Image(systemName: "line.3.horizontal")
+                            .tint(.black)
                     }
 
                 }

@@ -17,7 +17,6 @@
 		08186D392B5E089300486D42 /* SideMenuOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08186D382B5E089300486D42 /* SideMenuOptionModel.swift */; };
 		08186D422B5E167700486D42 /* SideMenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08186D412B5E167700486D42 /* SideMenuSections.swift */; };
 		08186D442B5E1A9F00486D42 /* SideMenuSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08186D432B5E1A9F00486D42 /* SideMenuSectionView.swift */; };
-		08186D472B5E21B500486D42 /* DashboradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08186D462B5E21B500486D42 /* DashboradView.swift */; };
 		08186D492B5E400300486D42 /* SideMenuFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08186D482B5E400300486D42 /* SideMenuFooterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		08186D382B5E089300486D42 /* SideMenuOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionModel.swift; sourceTree = "<group>"; };
 		08186D412B5E167700486D42 /* SideMenuSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSections.swift; sourceTree = "<group>"; };
 		08186D432B5E1A9F00486D42 /* SideMenuSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSectionView.swift; sourceTree = "<group>"; };
-		08186D462B5E21B500486D42 /* DashboradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradView.swift; sourceTree = "<group>"; };
 		08186D482B5E400300486D42 /* SideMenuFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 		08186D232B5E02AF00486D42 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				08186D452B5E21AA00486D42 /* Dashborad */,
 				08186D3C2B5E15D700486D42 /* App */,
 				08186D3B2B5E15C200486D42 /* SideMenu */,
 				08186D3A2B5E154D00486D42 /* Root */,
@@ -147,14 +144,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		08186D452B5E21AA00486D42 /* Dashborad */ = {
-			isa = PBXGroup;
-			children = (
-				08186D462B5E21B500486D42 /* DashboradView.swift */,
-			);
-			path = Dashborad;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,7 +216,6 @@
 			files = (
 				08186D332B5E03E500486D42 /* SideMenuView.swift in Sources */,
 				08186D352B5E04CA00486D42 /* SideMenuHeaderView.swift in Sources */,
-				08186D472B5E21B500486D42 /* DashboradView.swift in Sources */,
 				08186D392B5E089300486D42 /* SideMenuOptionModel.swift in Sources */,
 				08186D372B5E07F400486D42 /* SideMenuRowView.swift in Sources */,
 				08186D272B5E02AF00486D42 /* ContentView.swift in Sources */,
