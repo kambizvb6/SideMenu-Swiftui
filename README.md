@@ -3,6 +3,8 @@ Overview:
 
 <p align="center">
   <img width="300" align="center" src="https://github.com/kambizvb6/SideMenu-Swiftui/blob/main/SideMenu.gif" alt="demo"/>
+  <img width="300" align="center" src="https://github.com/kambizvb6/SideMenu-Swiftui/blob/main/light.png" alt="demo"/>
+  <img width="300" align="center" src="https://github.com/kambizvb6/SideMenu-Swiftui/blob/main/dark.png" alt="demo"/>
 </p>
 
 This repository contains a SwiftUI project implementing a Side Menu using Modularizing iOS Applications. Ta versatile and clean implementation built with SwiftUI that seamlessly integrates into your iOS app. This project emphasizes clean code practices and a modular architecture using Enum models. The Side Menu is meticulously designed to support both light and dark modes, providing a consistent and polished user experience.
