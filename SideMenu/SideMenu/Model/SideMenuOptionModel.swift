@@ -12,8 +12,9 @@ enum SideMenuOptionModel: Int, CaseIterable {
     case visitors
     case summary
     case searchEngin
+    case aboutus
     
-    var title: String{
+    var title: String {
         switch self {
         case .home:
             return "Home"
@@ -23,6 +24,8 @@ enum SideMenuOptionModel: Int, CaseIterable {
             return "Summary"
         case .searchEngin:
             return "Search Engin"
+        case .aboutus:
+            return "About US"
         }
     }
     
@@ -36,10 +39,12 @@ enum SideMenuOptionModel: Int, CaseIterable {
             return "chart.pie"
         case .searchEngin:
             return "magnifyingglass.circle"
+        case .aboutus:
+            return "exclamationmark.circle"
         }
     }
 }
 
-extension SideMenuOptionModel: Identifiable, Hashable{
+extension SideMenuOptionModel: Identifiable, Hashable {
     var id: Int { return self.rawValue }
 }

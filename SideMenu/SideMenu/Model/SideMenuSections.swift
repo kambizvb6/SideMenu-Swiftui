@@ -10,6 +10,8 @@ import Foundation
 enum SideMenuSections: Int, CaseIterable {
     case home
     case state
+    case about
+    
     
     var sectionTitle: String {
         switch self {
@@ -17,6 +19,8 @@ enum SideMenuSections: Int, CaseIterable {
             return "Home"
         case .state:
             return "State"
+        case .about:
+            return "About US"
         }
     }
     
@@ -26,6 +30,8 @@ enum SideMenuSections: Int, CaseIterable {
             return [.home]
         case .state:
             return [.visitors, .summary, .searchEngin]
+        case .about:
+            return [.aboutus]
         }
     }
 }
